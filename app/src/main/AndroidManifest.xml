@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.goscamsdkdemo">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:name=".GApplication"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".PlayActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".add.WifiSelectActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".add.QrCodeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".add.CheckBindStatusActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".add.bell.AddBellChildActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".add.bell.AddBellTokenActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".add.bell.AddBellVoiceActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".add.bell.AddBellNoticeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".setting.SettingActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".setting.ModifyDevNameActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".setting.DevShareActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".setting.TfInfoActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".setting.TimeVerifyActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".setting.PirDetectionActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".setting.NightSwitchActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".setting.MotionDetectionActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".setting.MicSwitchActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".setting.LedSwitchActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".setting.CameraSwitchActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".tf.TfDayActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".tf.TfDayFileActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".tf.TfFilePlayActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".cloud.CloudDayActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".cloud.CloudDayFileActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".cloud.CloudFilePlayActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ModifyPswActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ForgetPswActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".setting.DevSoftUpdateActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".WsActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
